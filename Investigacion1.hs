@@ -53,13 +53,4 @@ formal de la funcion eval para este caso, si se permitiesen identificadores repe
     debe ajustarse, dado que si al sustituir x por F, si F contiene una variable que ya está en uso en E, 
     se debe renombrar dicha variable para evitar confusión. Si no se renombra,
     la evaluación podría no ser correcta, ya que las variables se mezclarían (al menos visualmente).
-
-    
-
-
-
-
-
-
-
 -}

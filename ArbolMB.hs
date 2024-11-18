@@ -12,7 +12,7 @@ RamaB :: a -> ArbolMB a -> ArbolMB a -> ArbolMB a
 
 {-
 b)
-transformarVacio :: b -> b
+transformarVacio :: b
 transformarRamaM :: a -> b -> b
 transformarRamaB :: a -> b -> b -> b
  -}

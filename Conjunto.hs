@@ -35,3 +35,6 @@ diferencia c1 c2 = \x -> c1 x && not (c2 x)
 -- i)
 transformar :: (b -> a) -> Conjunto a -> Conjunto b
 transformar f c = \x -> c (f x)
+
+transformar' :: (b -> a) -> Conjunto a -> Conjunto b
+transformar' f c = c . f

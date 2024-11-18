@@ -1,11 +1,14 @@
 newtype Secuencial s a = Secuencial (s -> (a, s))
 
 -- c)
-return :: a -> Secuencial s a
-return x = Secuencial $ \estado -> (x, estado)
+-- return :: a -> Secuencial s a
+-- return x = Secuencial $ \estado -> (x, estado)
 
 -- d)
 instance Monad (Secuencial s) where
+    --c)
+    return :: a -> Secuencial s a
+    return x = Secuencial $ \estado -> (x, estado)
     (>>=) :: Secuencial s a -> (a -> Secuencial s b) -> Secuencial s b
     (Secuencial programa) >>= transformador =
         Secuencial $ \estadoInicial ->
